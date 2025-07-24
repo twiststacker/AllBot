@@ -1,0 +1,7 @@
+{
+  "environment": "development",
+  "api": {
+    "port": 3000,
+    "throttle": { "windowMs": 60000, "max": 100 }
+  }
+}

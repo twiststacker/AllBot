@@ -1,0 +1,7 @@
+{
+  "environment": "production",
+  "api": {
+    "port": 80,
+    "throttle": { "windowMs": 60000, "max": 1000 }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "SecuBot": {
+    "MaxAllowedRules": 20
+  },
+
+  "StreamBot": {
+    "LogPath": "C:\\ALLBOT\\logs\\app.log",
+    "ForecastLines": 100,
+    "ErrorThreshold": 5
+  },
+
+  "ThrottleBot": {
+    "ApiPort": 3000
+  },
+
+  "VaultBot": {
+    "KeyVaultName": "myvault",
+    "RotateEveryHours": 24
+  },
+
+  "GiGBot": {
+    "TeamsWebhookUrl": "https://outlook.office.com/webhook/…"
+  }
+
+  {
+  "SecuBot": {
+    "MaxAllowedRules": 20
+  },
+  "StreamBot": {
+    "LogPath": "C:\\ALLBOT\\logs\\app.log",
+    "ForecastLines": 100,
+    "ErrorThreshold": 5
+  },
+  "ThrottleBot": {
+    "ApiPort": 3000
+  },
+  "VaultBot": {
+    "KeyVaultName": "myvault",
+    "RotateEveryHours": 24
+  },
+  "GiGBot": {
+    "TeamsWebhookUrl": "https://outlook.office.com/webhook/…"
+  },
+  "ThermoBot": {},
+  "ThinkBot": {}
+}
+}

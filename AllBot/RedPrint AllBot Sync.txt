@@ -1,0 +1,52 @@
+                ┌────────────────────────────┐
+                │        Client/UI/API      │
+                └───────────┬────────────────┘
+                            │ REST / gRPC / WebSocket
+                            ▼
+                ┌────────────────────────────┐
+                │      Orchestrator Tier     │
+                │  • Command Gateway         │
+                │  • Task Scheduler          │
+                └───────────┬────────────────┘
+                            │ Publish / Subscribe
+                            ▼
+┌────────┐    ┌────────┐    ┌────────┐    ┌────────┐
+│  Over  │◄──▶│ Stream │◄──▶│  Secu  │◄──▶│Thermo  │  … each bot
+│  BOT   │    │  BOT   │    │  BOT   │    │  BOT   │
+└────────┘    └────────┘    └────────┘    └────────┘
+      ▲             ▲             ▲             ▲
+      └─────────────┴─────────────┴─────────────┴───▶
+                            Event Bus / Message Queue
+							
+							
+C:\ALLBOT
+├── src
+│   ├── client
+│   │   ├── api
+│   │   │   ├── controllers
+│   │   │   │   └── throttleController.js
+│   │   │   ├── middleware
+│   │   │   │   └── rateLimiter.js
+│   │   │   ├── package.json
+│   │   │   └── server.js
+│   │   └── ui
+│   │       ├── index.html
+│   │       └── main.js
+│   ├── orchestrator
+│   │   └── orchestrator.ps1
+│   └── bots
+│       ├── OverBot
+│       ├── SecuBot
+│       ├── StreamBot
+│       ├── ThrottleBot
+│       └── VaultBot
+├── config
+│   ├── default.json
+│   └── production.json    (hidden)
+├── scripts
+│   └── scaffold.ps1
+├── docs
+│   └── architecture.md
+├── .gitignore              (hidden)
+├── README.md
+└── docker-compose.yml

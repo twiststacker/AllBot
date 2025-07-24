@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  api:
+    build: ./src/client/api
+    ports:
+      - '3000:3000'
+  orchestrator:
+    image: mcr.microsoft.com/powershell:lts
+    volumes:
+      - ./src/orchestrator:/scripts
+    command: powershell ./scripts/orchestrator.ps1
