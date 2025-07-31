@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-system.requires = ["setuptools >=42"]
+
+[project]
+name = "SemirSuite"
+version = "1.0.0"
+description = "A comprehensive suite for AI model management and task routing."
+readme = "README.md"
+authors = [
+    {name = "Semir Music", email = "DigitalFlow89@outlook.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/twiststacker/SemirSuite"
+
+[project.dependencies]
+huggingface-hub = "*"
+fastapi = "*"
+jose = "*"
+python-dotenv = "*"
+psutil = "*"
+streamlit = "*"
+structlog = "*"
+jsonschema = "*"
+numpy = "*"
+# Add other dependencies as needed
+
+[tool.setuptools.packages.find]
+where = ["semirsuite"]
